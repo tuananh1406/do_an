@@ -26,7 +26,8 @@ def list_items(request):
         context = {
             "header": header,
             'queryset': queryset,
-            'form' :form
+            'form' :form,
+
         }
         category = form['category'].value()
         if request.method == 'POST':

@@ -1,0 +1,125 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCOUNT_ACTIVATION_DAYS	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window$/;"	v
+ALLOWED_HOSTS	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^ALLOWED_HOSTS = ['.localhost','127.0.0.1','[::1]','0.0.0.0','192.168.0.119']$/;"	v
+AUTH_PASSWORD_VALIDATORS	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+BASE_DIR	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+CRISPY_TEMPLATE_PACK	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^CRISPY_TEMPLATE_PACK = 'bootstrap4'$/;"	v
+Category	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^class Category(models.Model):$/;"	c
+DATABASES	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^DATABASES = {$/;"	v
+DEBUG	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^INSTALLED_APPS = [$/;"	v
+IssueForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class IssueForm(forms.ModelForm):$/;"	c
+LANGUAGE_CODE	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+LOGIN_REDIRECT_URL	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	v
+MIDDLEWARE	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:IssueForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:ReorderLevelForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:StockCreateForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:StockHistorySearchForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:StockSearchForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		class Meta:$/;"	c	class:StockUpdateForm
+Meta	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^	class Meta:$/;"	c	class:ReceiveForm
+Migration	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+REGISTRATION_AUTO_LOGIN	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.$/;"	v
+ROOT_URLCONF	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^ROOT_URLCONF = 'djangoproject.urls'$/;"	v
+ReceiveForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class ReceiveForm(forms.ModelForm):$/;"	c
+ReorderLevelForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class ReorderLevelForm(forms.ModelForm):$/;"	c
+SITE_ID	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^SITE_ID = 1$/;"	v
+STATIC_URL	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+Stock	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^class Stock(models.Model):$/;"	c
+StockCreateAdmin	/home/htuananh/TUAN_ANH/do_an/stockmgmt/admin.py	/^class StockCreateAdmin(admin.ModelAdmin):$/;"	c
+StockCreateForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class StockCreateForm(forms.ModelForm):$/;"	c
+StockHistory	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^class StockHistory(models.Model):$/;"	c
+StockHistorySearchForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class StockHistorySearchForm(forms.ModelForm):$/;"	c
+StockSearchForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class StockSearchForm(forms.ModelForm):$/;"	c
+StockUpdateForm	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^class StockUpdateForm(forms.ModelForm):$/;"	c
+StockmgmtConfig	/home/htuananh/TUAN_ANH/do_an/stockmgmt/apps.py	/^class StockmgmtConfig(AppConfig):$/;"	c
+TEMPLATES	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	/home/htuananh/TUAN_ANH/do_an/djangoproject/settings.py	/^WSGI_APPLICATION = 'djangoproject.wsgi.application'$/;"	v
+__str__	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        def __str__(self):$/;"	m	class:Category	file:
+__str__	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        def __str__(self):$/;"	m	class:Stock	file:
+add_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def add_items(request):$/;"	f
+application	/home/htuananh/TUAN_ANH/do_an/djangoproject/asgi.py	/^application = get_asgi_application()$/;"	v
+application	/home/htuananh/TUAN_ANH/do_an/djangoproject/wsgi.py	/^application = get_wsgi_application()$/;"	v
+barcode	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        barcode = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+barcode	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        barcode = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+category	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True)$/;"	v	class:Stock
+category	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)$/;"	v	class:StockHistory
+category_choice	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^category_choice = ($/;"	v
+clean_category	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		def clean_category(self):$/;"	m	class:StockCreateForm
+clean_item_name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		def clean_item_name(self):$/;"	m	class:StockCreateForm
+created_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        created_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+created_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        created_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+delete_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def delete_items(request, pk):$/;"	f
+dependencies	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+end_date	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		end_date = forms.DateTimeField(required=False)$/;"	v	class:StockHistorySearchForm
+export_to_CSV	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		export_to_CSV = forms.BooleanField(required=False)$/;"	v	class:StockHistorySearchForm
+export_to_CSV	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		export_to_CSV = forms.BooleanField(required=False)$/;"	v	class:StockSearchForm
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^				fields = ['category', 'item_name', 'barcode', 'quantity']$/;"	v	class:StockUpdateForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			fields = ['category', 'item_name', 'barcode', 'quantity']$/;"	v	class:StockCreateForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			fields = ['category', 'item_name', 'barcode', 'start_date', 'end_date']$/;"	v	class:StockHistorySearchForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			fields = ['category', 'item_name', 'barcode']$/;"	v	class:StockSearchForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			fields = ['issue_quantity', 'issue_to']$/;"	v	class:IssueForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			fields = ['reorder_level']/;"	v	class:ReorderLevelForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		fields = ['receive_quantity']$/;"	v	class:ReceiveForm.Meta
+fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+form	/home/htuananh/TUAN_ANH/do_an/stockmgmt/admin.py	/^    form = StockCreateForm$/;"	v	class:StockCreateAdmin
+home	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def home(request):$/;"	f
+initial	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+issue_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+issue_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+issue_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def issue_items(request, pk):$/;"	f
+issue_quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:Stock
+issue_quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:StockHistory
+issue_to	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_to = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+issue_to	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        issue_to = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+item_name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        item_name = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+item_name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        item_name = models.CharField(max_length=50, blank=True, null=True, )$/;"	v	class:Stock
+last_updated	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        last_updated = models.DateTimeField(auto_now_add=False, auto_now=False, null=True)$/;"	v	class:StockHistory
+last_updated	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        last_updated = models.DateTimeField(auto_now_add=False, auto_now=True)$/;"	v	class:Stock
+list_display	/home/htuananh/TUAN_ANH/do_an/stockmgmt/admin.py	/^    list_display = ['category', 'item_name','barcode','quantity']$/;"	v	class:StockCreateAdmin
+list_filter	/home/htuananh/TUAN_ANH/do_an/stockmgmt/admin.py	/^    list_filter = ['category']$/;"	v	class:StockCreateAdmin
+list_history	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def list_history(request):$/;"	f
+list_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def list_items(request):$/;"	f
+main	/home/htuananh/TUAN_ANH/do_an/manage.py	/^def main():$/;"	f
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^				model = Stock$/;"	v	class:StockUpdateForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			model = Stock$/;"	v	class:IssueForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			model = Stock$/;"	v	class:ReorderLevelForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			model = Stock$/;"	v	class:StockCreateForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			model = Stock$/;"	v	class:StockSearchForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^			model = StockHistory$/;"	v	class:StockHistorySearchForm.Meta
+model	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		model = Stock$/;"	v	class:ReceiveForm.Meta
+name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/apps.py	/^    name = 'stockmgmt'$/;"	v	class:StockmgmtConfig
+name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^            name='Category',$/;"	v	class:Migration
+name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^            name='Stock',$/;"	v	class:Migration
+name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^            name='StockHistory',$/;"	v	class:Migration
+name	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        name = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Category
+operations	/home/htuananh/TUAN_ANH/do_an/stockmgmt/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+phone_number	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        phone_number = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+phone_number	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        phone_number = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:Stock
+quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:StockHistory
+receive_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        receive_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:Stock
+receive_by	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        receive_by = models.CharField(max_length=50, blank=True, null=True)$/;"	v	class:StockHistory
+receive_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def receive_items(request, pk):$/;"	f
+receive_quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        receive_quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:Stock
+receive_quantity	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        receive_quantity = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:StockHistory
+reorder_level	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        reorder_level = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:Stock
+reorder_level	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        reorder_level = models.IntegerField(default='0', blank=True, null=True)$/;"	v	class:StockHistory
+reorder_level	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def reorder_level(request, pk):$/;"	f
+search_fields	/home/htuananh/TUAN_ANH/do_an/stockmgmt/admin.py	/^    search_fields = ['category', 'item_name']$/;"	v	class:StockCreateAdmin
+start_date	/home/htuananh/TUAN_ANH/do_an/stockmgmt/forms.py	/^		start_date = forms.DateTimeField(required=False)$/;"	v	class:StockHistorySearchForm
+stock_detail	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def stock_detail(request, pk):$/;"	f
+timestamp	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        timestamp = models.DateTimeField(auto_now_add=False, auto_now=False, null=True)/;"	v	class:StockHistory
+timestamp	/home/htuananh/TUAN_ANH/do_an/stockmgmt/models.py	/^        timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)$/;"	v	class:Stock
+update_items	/home/htuananh/TUAN_ANH/do_an/stockmgmt/views.py	/^def update_items(request, pk):$/;"	f
+urlpatterns	/home/htuananh/TUAN_ANH/do_an/djangoproject/urls.py	/^urlpatterns = [$/;"	v
