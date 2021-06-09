@@ -83,8 +83,10 @@
               <div class = "col-sm-10">
                   <div class="display_table"> 
                       <table class='table'>
+                        {% block table %}
                           <thead>
                             <tr>
+                                {% comment %}
                                 <th>#</th>
                                 <!--<th>ID</th>-->
                                 <th>CATEGORY</th> 
@@ -95,6 +97,10 @@
                                 <!--<th>TIMESTAMP</th>-->
                                 <th>LAST UPDATED</th>
                                 <th>ACTION</th>
+                                {% endcomment %}
+                                {% for title in row_title %}
+                                <th>{{ title }}</th>
+                                {% endfor %}
                             </tr>
                           </thead>
                             {% for instance in queryset %}
@@ -120,6 +126,7 @@
                                 <td><a href="{% url 'delete_items' instance.id %}"><img src="{% static 'img/buttonDel.png' %}" width="35" height="35"></a> </td>
                                 </tr>
                             {% endfor %}
+                      {% endblock %}
                       </table>
                   </div>  
               </div><!--END COL SM 10-->

@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime, timedelta, timezone
 
 # Create your models here.
 
@@ -28,9 +29,14 @@ class Stock(models.Model):
     phone_number = models.CharField(max_length=50, blank=True, null=True)
     created_by = models.CharField(max_length=50, blank=True, null=True)
     reorder_level = models.IntegerField(default='0', blank=True, null=True)
-    last_updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+    last_updated = models.DateTimeField()
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     exp_day = models.DateTimeField()
+
+    def save(self, *args, **kwargs):
+        self.last_updated = datetime.now(timezone.utc)
+        self.exp_day = self.last_updated + timedelta(days=30)
+        super(Stock, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.item_name + ' ' + str(self.quantity)

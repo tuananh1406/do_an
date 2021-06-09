@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import csv
+from datetime import datetime, timezone
 
 from django.contrib import messages
 from .models import *
@@ -23,11 +24,21 @@ def list_items(request):
         header = 'List Of Items'
         form = StockSearchForm(request.POST or None)
         queryset =  Stock.objects.all()
+        row_title = [
+            "#",
+            "CATEGORY",
+            "ITEM NAME",
+            "BARCODE",
+            "QUANTITY IN STORE",
+            "REORDER LEVEL",
+            "LAST UPDATED",
+            "ACTION",
+        ]
         context = {
             "header": header,
             'queryset': queryset,
             'form' :form,
-
+            'row_title': row_title,
         }
         category = form['category'].value()
         if request.method == 'POST':
@@ -50,9 +61,55 @@ def list_items(request):
             context = {
             "form": form,
             "header": header,
+            'row_title': row_title,
             "queryset": queryset,
             }
         return render(request, "list_items.html",context)
+
+@login_required
+def exp_items(request):
+        header = 'Exp. Of Items'
+        form = StockSearchForm(request.POST or None)
+        queryset =  Stock.objects.all()
+        row_title = [
+            "STT",
+            "ITEM NAME",
+            "LAST UPDATED",
+            "EXP.",
+        ]
+        context = {
+            "header": header,
+            'queryset': queryset,
+            'form' :form,
+            'row_title': row_title,
+            'time_now': datetime.now(timezone.utc),
+        }
+        category = form['category'].value()
+        if request.method == 'POST':
+            queryset = Stock.objects.filter(
+                                            # category__icontains=form['category'].value(),
+                                            item_name__icontains=form['item_name'].value(),
+                                            barcode__icontains=form['barcode'].value(),
+                                        )
+            if (category != ''):
+                queryset = queryset.filter(category_id=category)
+            if form['export_to_CSV'].value() == True:
+                response = HttpResponse(content_type='text/csv')
+                response['Content-Disposition'] = 'attachment; filename="List of stock.csv"'
+                writer = csv.writer(response)
+                writer.writerow(['CATEGORY', 'ITEM NAME','BARCODE', 'QUANTITY'])
+                instance = queryset
+                for stock in instance:
+                    writer.writerow([stock.category, stock.item_name, stock.barcode, stock.quantity])
+                return response
+            context = {
+                "form": form,
+                "header": header,
+                'row_title': row_title,
+                "queryset": queryset,
+                'time_now': datetime.now(timezone.utc),
+            }
+        return render(request, "exp_items.html", context)
 
 @login_required
 def add_items(request):

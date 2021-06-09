@@ -1,0 +1,43 @@
+{% extends 'list_items.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load cal_exp %}
+{% block table %}
+<thead>
+        <tr>
+                {% comment %}
+                <th>#</th>
+                <!--<th>ID</th>-->
+                <th>CATEGORY</th> 
+                <th>ITEM NAME</th>
+                <th>BARCODE</th>
+                <th>QUANTITY IN STORE</th>
+                <th>REORDER LEVEL</th>
+                <!--<th>TIMESTAMP</th>-->
+                <th>LAST UPDATED</th>
+                <th>ACTION</th>
+                {% endcomment %}
+                {% for title in row_title %}
+                <th>{{ title }}</th>
+                {% endfor %}
+        </tr>
+</thead>
+{% for instance in queryset %}
+<tr>
+        <td>{{ forloop.counter }}</td>
+        <td><a href="{% url 'update_items' instance.id %}">{{ instance.item_name }}</a></td>
+        <td>{{ instance.last_updated }}</td>
+        <td>
+                {% if instance.exp_day > time_now %}
+                <div style="background-color: orange; border-radius:30px/80px;" >
+                        <a href="{% url 'stock_detail' instance.id %}">{{ instance.exp_day|cal_exp_day }}</a>
+                </div>
+                {% else %}
+                <div style="background-color: red; border-radius:30px/80px;" >
+                        <a href="{% url 'stock_detail' instance.id %}">Hết hạn</a>
+                </div>
+                {% endif %}
+        </td>
+</tr>
+{% endfor %}
+{% endblock %}
