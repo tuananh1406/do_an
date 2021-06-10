@@ -41,7 +41,7 @@ class StockUpdateForm(forms.ModelForm):
 		
 		class Meta:
 				model = Stock
-				fields = ['category', 'item_name', 'barcode', 'quantity']
+				fields = ['category', 'item_name', 'barcode', 'quantity', 'exp_day']
 
 class IssueForm(forms.ModelForm):
 		class Meta:
