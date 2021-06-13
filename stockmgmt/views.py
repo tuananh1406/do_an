@@ -14,6 +14,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
         title = 'Welcome: This is the Home Page'
         context = {
+            'total': get_total_stock(),
             "title": title,
         }
         return redirect('/list_items')
@@ -35,6 +36,7 @@ def list_items(request):
             "ACTION",
         ]
         context = {
+            'total': get_total_stock(),
             "header": header,
             'queryset': queryset,
             'form' :form,
@@ -59,6 +61,7 @@ def list_items(request):
                     writer.writerow([stock.category, stock.item_name, stock.barcode, stock.quantity])
                 return response
             context = {
+                'total': get_total_stock(),
             "form": form,
             "header": header,
             'row_title': row_title,
@@ -78,6 +81,7 @@ def exp_items(request):
             "EXP.",
         ]
         context = {
+            'total': get_total_stock(),
             "header": header,
             'queryset': queryset,
             'form' :form,
@@ -103,6 +107,7 @@ def exp_items(request):
                     writer.writerow([stock.category, stock.item_name, stock.barcode, stock.quantity])
                 return response
             context = {
+                'total': get_total_stock(),
                 "form": form,
                 "header": header,
                 'row_title': row_title,
@@ -119,6 +124,7 @@ def add_items(request):
             messages.success(request, 'Successfully Saved')
             return redirect('/list_items')
         context = {
+            'total': get_total_stock(),
             "form": form,
             "title": "Add Item",
         }
@@ -135,6 +141,7 @@ def update_items(request, pk):
                 return redirect('/list_items')
 
         context = {
+            'total': get_total_stock(),
             'form':form
         }
         return render(request, 'add_items.html', context)
@@ -150,6 +157,7 @@ def delete_items(request, pk):
 def stock_detail(request, pk):
         queryset = Stock.objects.get(id=pk)
         context = {
+            'total': get_total_stock(),
 
             "queryset": queryset,
         }
@@ -171,6 +179,7 @@ def issue_items(request, pk):
             # return HttpResponseRedirect(instance.get_absolute_url())
 
         context = {
+            'total': get_total_stock(),
             "title": 'Issue ' + str(queryset.item_name),
             "queryset": queryset,
             "form": form,
@@ -193,6 +202,7 @@ def receive_items(request, pk):
         return redirect('/stock_detail/'+str(instance.id))
         # return HttpResponseRedirect(instance.get_absolute_url())
     context = {
+        'total': get_absolute_url(),
             "title": 'Reaceive ' + str(queryset.item_name),
             "instance": queryset,
             "form": form,
@@ -211,6 +221,7 @@ def reorder_level(request, pk):
 
             return redirect("/list_items")
         context = {
+            'total': get_absolute_url(),
                 "instance": queryset,
                 "form": form,
             }
@@ -222,6 +233,7 @@ def list_history(request):
     queryset = StockHistory.objects.all()
     form = StockHistorySearchForm(request.POST or None)
     context = {
+        'total': get_absolute_url(),
         "header": header,
         "queryset": queryset,
         "form": form,
@@ -269,8 +281,12 @@ def list_history(request):
             return response
 
         context = {
+            'total': get_absolute_url(),
         "form": form,
         "header": header,
         "queryset": queryset,
     }
     return render(request, "list_history.html",context)
+
+def get_total_stock():
+    return Stock.objects.count()

@@ -34,7 +34,12 @@
                 </div>
                 {% else %}
                 <div style="background-color: red; border-radius:30px/80px;" >
-                        <a href="{% url 'stock_detail' instance.id %}">Hết hạn</a>
+                        <a href="{% url 'stock_detail' instance.id %}">
+                        
+                                <font class="bold" color="black">
+                                        <strong>Hết hạn</strong>
+                                </font>
+                        </a>
                 </div>
                 {% endif %}
         </td>

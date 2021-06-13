@@ -56,7 +56,8 @@
   </head>
 <body>
     {% include 'navbar.html' %} 
-
+    {% include 'topnav.html' %} 
+    <br>
 <main role="main" class="container">
     {% if messages %}
       <ul class="messages">
@@ -68,15 +69,17 @@
     <div class="jumbotron">
       <div class = 'header'>{{header}}</div>
       <div class="row" > 
+        <strong>
           <div class="col-sm-2"><!--Start of first col-->
             <form method='POST' action=''>{% csrf_token %}
                 {{form|crispy}}
-                <input class="btn btn-warning mybutton" type="submit" value='Search'/>
+                <input class="btn btn-warning mybutton " type="submit" value='Search'/>
             </form>
             <br>
             <br>
-            <a href="/add_items"><div class="btn btn-success mybutton">Add Items</div></a><br><br>
-            <a href="/list_history"><div class="btn btn-success mybutton">List History</div></a><br>
+            <a href="/add_items"><div class="btn btn-success mybutton"><strong>Add Items</strong></div></a><br><br>
+            <a href="/list_history"><div class="btn btn-success mybutton"><strong>List History</strong></div></a><br>
+          </strong>
             <br>
           </div><!--End of first col-->
             <br>
@@ -108,7 +111,7 @@
                                 <td>{{forloop.counter}}</td>
                                 <!--<td>{{instance.id}}</td>-->
                                 <td>{{instance.category}}</td>
-                                <td><a href="{% url 'update_items' instance.id %}">{{instance.item_name}}</a></td>
+                                <td><a href="{% url 'update_items' instance.id %}"><strong>{{instance.item_name}}</strong></a></td>
 
                                 <td>{{instance.barcode}}</td>
                                 <td>
