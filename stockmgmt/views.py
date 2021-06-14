@@ -202,7 +202,7 @@ def receive_items(request, pk):
         return redirect('/stock_detail/'+str(instance.id))
         # return HttpResponseRedirect(instance.get_absolute_url())
     context = {
-        'total': get_absolute_url(),
+            'total': get_total_stock(),
             "title": 'Reaceive ' + str(queryset.item_name),
             "instance": queryset,
             "form": form,
@@ -221,7 +221,7 @@ def reorder_level(request, pk):
 
             return redirect("/list_items")
         context = {
-            'total': get_absolute_url(),
+                'total': get_total_stock(),
                 "instance": queryset,
                 "form": form,
             }
@@ -233,7 +233,7 @@ def list_history(request):
     queryset = StockHistory.objects.all()
     form = StockHistorySearchForm(request.POST or None)
     context = {
-        'total': get_absolute_url(),
+        'total': get_total_stock(),
         "header": header,
         "queryset": queryset,
         "form": form,
@@ -281,7 +281,7 @@ def list_history(request):
             return response
 
         context = {
-            'total': get_absolute_url(),
+        'total': get_total_stock(),
         "form": form,
         "header": header,
         "queryset": queryset,
